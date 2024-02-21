@@ -1,26 +1,36 @@
 {% extends "base.html" %}
 {% block main %}
+
 <body>
-    <img src="{{ url_for('static', filename = 'website_img.jpg')}}" alt="Image of Brittanie Morgan">
-    <hr><h1>Brittanie Morgan</h1><hr>
-    <p>@bmorgan</p>
-    <p>Kingston, Jamaica</p>
-    <p>Joined {{ dateJoined }}</p>
-    <p> I am a final year university student pursuing a Bachelor of Science in Software Engineering. I have a great
-        passion for technology and whether it's web development or machine learning, I'm always excited to dive in
-        and make things happen. Outside of software development, you can find me baking, watching televison series,
-        and practicing Spanish.
-    </p>
-    <div class="follow-dets">
-        <p>8</p>
-        <p>Posts</p>
-
-        <p>100</p>
-        <p>Following</p>
-
-        <p>250</p>
-        <p>Followers</p>
+    <div class="head">
+        <img src="{{ url_for('static', filename = 'website_img.jpg')}}" alt="Image of Brittanie Morgan">
+        <h1>Brittanie Morgan</h1>
+        <p>@bmorgan</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{ dateJoined }}</p>
     </div>
-    <button class="btn-primary">Follow</button>
-</body>
-{% endblock %}
+    <div>
+        <p> I am a final year university student pursuing a Bachelor of Science in Software Engineering. I have a great
+            passion for technology and whether it's web development or machine learning, I'm always excited to dive in
+            and make things happen. Contact me if you'd like to work together on a new project.
+        </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>8</p>
+                <p class="faded-text">Posts</p>
+            </div>
+            <div class="col-sm-4">
+                <p>100</p>
+                <p class="faded-text">Following</p>
+            </div>
+            <div class="col-sm-4">
+                <p>250</p>
+                <p class="faded-text">Followers</p>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-success">Follow</button>
+    </div>
+    
+</body {% endblock %}

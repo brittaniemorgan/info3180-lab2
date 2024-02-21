@@ -15,7 +15,7 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Brittanie Morgan")
 
 @app.route('/profile')
 def profile():
@@ -26,7 +26,7 @@ def profile():
 ###
 
 def format_date_joined(dateJoined):
-    return dateJoined.strftime("%B, %Y")
+    return dateJoined.strftime("%b, %Y")
 
 ###
 # The functions below should be applicable to all Flask apps.

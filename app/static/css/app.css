@@ -1,3 +1,44 @@
 body {
     padding-top: 5rem;
-}
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    display: flexbox;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(180, 248, 251);
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  img{
+    width: 300px;
+    border-radius: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px; 
+  }
+  
+  h1{
+    font-family: 'Playfair Display', serif;
+    color: navy;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+  
+  hr{
+    margin: 0px auto;
+    background-color: navy;
+    height:2px;
+    border-style: none;
+    max-width: 50%;
+  }
+  
+  p{
+    margin-top: 50px;
+  }
